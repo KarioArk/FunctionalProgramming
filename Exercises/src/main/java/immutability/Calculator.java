@@ -1,3 +1,5 @@
+package immutability;
+
 public class Calculator {
 
     private int memory = 0;
