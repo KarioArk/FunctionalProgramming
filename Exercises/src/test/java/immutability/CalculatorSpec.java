@@ -24,4 +24,9 @@ public class CalculatorSpec {
         assertThat(calculator.addWithMemory(7)).isEqualTo(14);
         assertThat(calculator.addWithMemory(2)).isEqualTo(16);
     }
+
+
+    public void ableToAddTwoNumbersWithMemoryUsingImmutableObjects() {
+        
+    }
 }
