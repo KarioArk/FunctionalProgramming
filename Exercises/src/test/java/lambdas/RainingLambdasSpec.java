@@ -8,7 +8,7 @@ public class RainingLambdasSpec {
     private final RainingLambdas lambdas = new RainingLambdas();
 
     @Test
-    public void incrementBY1(){
+    public void incrementBy1(){
         assertThat(lambdas.increment(5)).isEqualTo(6);
     }
 
