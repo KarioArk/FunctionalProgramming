@@ -1,6 +1,5 @@
 package immutability;
 
-import immutability.Calculator;
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.*;
 
@@ -23,5 +22,11 @@ public class CalculatorSpec {
         assertThat(calculator.addWithMemory(5)).isEqualTo(7);
         assertThat(calculator.addWithMemory(7)).isEqualTo(14);
         assertThat(calculator.addWithMemory(2)).isEqualTo(16);
+    }
+
+
+    // Implement the same with immutable objects
+    public void ableToAddTwoNumbersWithMemoryUsingImmutableObjects() {
+
     }
 }
