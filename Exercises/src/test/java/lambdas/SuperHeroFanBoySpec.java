@@ -9,7 +9,7 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.*;
 
-public class SuperHeroSorterSpec {
+public class SuperHeroFanBoySpec {
 
     private List<SuperHero> employees;
 
@@ -36,13 +36,6 @@ public class SuperHeroSorterSpec {
     }
 
     // 2. Sort them in descending order by their strength
-
     // 3. Create your own superhero with random strength above 80 and below 85
 
-    // 4. Filter those with strength greater than 90
-    // 5. Filter those with strength less than 85
-    // 6. Filter the heroes whose name starts with 'C'
-    // 7. Add a squad property to the class and group the heroes by their squad
-    // 8. Filter the strongest 3 from each squad
-    // 9. Strongest from each squad
 }

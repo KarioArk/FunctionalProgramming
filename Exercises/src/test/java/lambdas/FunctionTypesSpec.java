@@ -4,6 +4,7 @@ import org.junit.Test;
 
 public class FunctionTypesSpec {
 
+    // TODO: This cannot be started till HOF are done
     // 1. Whats wrong here?
     @Test
     public void useRunnerForGreetingTheUser5Times() {
