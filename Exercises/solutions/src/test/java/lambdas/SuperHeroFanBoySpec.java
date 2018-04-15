@@ -6,6 +6,7 @@ import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -32,10 +33,11 @@ public class SuperHeroFanBoySpec {
     // 1. Use comparator to sort the super heroes by name
     @Test
     public void shouldSortSuperHeroesByName() {
-        assertThat(new SuperHeroSorter().sort(employees)).isEqualTo("[Banner, Challa, Curry, Diana, Kent, Parker, Rogers, Stark, Thor, Wayne]");
+        assertThat(new SuperHeroSorter().sort(employees).toString()).isEqualTo("[Banner, Challa, Curry, Diana, Kent, Parker, Rogers, Stark, Thor, Wayne]");
     }
 
     // 2. Sort them in descending order by their strength
-    // 3. Create your own superhero with random strength above 80 and below 85
+    // 3. Sort them in ascending order by their strength
+    // 4. Create your own superhero with random strength above 70 and below 85
 
 }

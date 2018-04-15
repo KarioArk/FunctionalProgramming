@@ -36,6 +36,7 @@ public class SuperHeroFanBoySpec {
     }
 
     // 2. Sort them in descending order by their strength
-    // 3. Create your own superhero with random strength above 80 and below 85
+    // 3. Sort them in ascending order by their strength
+    // 4. Create your own superhero with random strength above 70 and below 85
 
 }

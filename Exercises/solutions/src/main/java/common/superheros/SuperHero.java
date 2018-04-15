@@ -44,4 +44,9 @@ public class SuperHero {
     public String fightHistory() {
         return "";
     }
+
+    @Override
+    public String toString() {
+        return this.name;
+    }
 }

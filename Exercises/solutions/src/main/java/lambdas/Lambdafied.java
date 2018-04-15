@@ -1,18 +1,26 @@
 package lambdas;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Function;
+import java.util.stream.Collectors;
 
 public class Lambdafied {
 
+    Function<Integer, Integer> incrementor = v -> v + 1;
+    BiFunction<Integer, Integer, Integer> adder = (v1, v2) -> v1 + v2;
     public int increment(int x) {
-        Function<Integer, Integer> incrementor = v -> v + 1;
         return incrementor.apply(x);
     }
 
     public int add(int x, int y) {
-        BiFunction<Integer, Integer, Integer> adder = (v1, v2) -> v1 + v2;
+
         return adder.apply(x, y);
+    }
+
+    public List<Integer> square(List<Integer> integers) {
+        return integers.stream().map(x -> x * x).collect(Collectors.toList());
     }
 
     /** Intermediate solution 1 **/
