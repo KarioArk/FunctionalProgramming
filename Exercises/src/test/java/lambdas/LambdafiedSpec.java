@@ -20,4 +20,7 @@ public class LambdafiedSpec {
     public void addTwoNumbersReturnsTheSum(){
         assertThat(lambdas.add(5, 6)).isEqualTo(11);
     }
+
+    /** Nice to do **/
+    // 5. Create a list of integers. And square each element in the list
 }
