@@ -2,30 +2,21 @@
 
 ## Day 1
 
-1. Immutability -> Why? (30) - Arun
-  - What it is?
-  - Why is it required?
-  - Example of bad mutation
-  - Testing complexity
-  - Impact on Concurrency & Parallelism
-  - Exercise.
-  
-2. Pure Functions (45) - Hari
-  - What are pure
-  - Referential Transparency
-  - Benefits
-  - Simpler Testing
-  - Singular Responsibility
-  - Exercise.
-  - Reflect
-  - Immutability vs Encapsulation
-  
-3. Function as an Object (60) - Arun
+1. Immutability  & Pure Functions
+  - What is immutable and mutable.
+  - Downsides of mutation. 
+  - Making it Immutable
+  - How Immutability Helps
+  - Note on Referential Transparency
+  - Pure Functions
+
+2. Function as an Object (60) - Arun
   - What it is
   - Anonymous Function
   - Single Interface replacement with functional closure.
   - OO example and convert it to a closure.
-4.  Types of Functions (45) - Hari
+
+3.  Types of Functions (45) - Hari
   - Functional Interfaces
   - Function, Bi-Function,
     - What it is
@@ -36,7 +27,8 @@
   - Producer/Supplier
     - What it is
     - Exercise
-5.  First End of Day Exercises (60) - Arun/Hari
+
+4.  First End of Day Exercises (60) - Arun/Hari
 ---
 
 ## Day 2
