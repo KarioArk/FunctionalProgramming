@@ -4,13 +4,13 @@ import org.junit.Test;
 
 public class SimpleHOFSpec {
 
-    //Implement Sigma
+    // 1. Implement Sigma
     @Test
     public void ableToCalculateSigma(){
 
     }
 
-    //Implement Factorial
+    // 2. Implement Factorial
     public void ableToCalculateFactorial() {
 
     }
