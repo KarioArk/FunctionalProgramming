@@ -17,4 +17,5 @@ public class FunctionTypesSpec {
     // 6. Find the cube of 7
     // 7. Find the value of 5 raised to the power of 5
     // 8. Express square and cube in terms of power function
+
 }

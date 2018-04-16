@@ -25,8 +25,9 @@ public class CalculatorSpec {
     }
 
 
-    // Implement the same with immutable objects
-    public void ableToAddTwoNumbersWithMemoryUsingImmutableObjects() {
+    /**
+     * 1. Reimplement the above with immutable Calculator
+     **/
 
-    }
+
 }

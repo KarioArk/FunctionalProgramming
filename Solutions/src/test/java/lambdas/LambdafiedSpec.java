@@ -2,6 +2,8 @@ package lambdas;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.assertj.core.api.Assertions.*;
 
 public class LambdafiedSpec {
@@ -23,4 +25,8 @@ public class LambdafiedSpec {
 
     /** Nice to do **/
     // 5. Create a list of integers. And square each element in the list
+    @Test
+    public void squareNumbersList() {
+        assertThat(lambdas.square(Arrays.asList(1, 2, 5 , 6))).isEqualTo(Arrays.asList(1, 4, 25, 36));
+    }
 }
