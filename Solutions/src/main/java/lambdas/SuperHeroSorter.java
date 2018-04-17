@@ -18,15 +18,15 @@ public class SuperHeroSorter {
 //        return superHeroes.stream().sorted(new SuperHeroComparator()).collect(Collectors.toList());
 //    }
 
-    public List<SuperHero> sort(List<SuperHero> superHeroes) {
-        return superHeroes.stream().sorted((o1, o2) -> o1.getName().compareTo(o2.getName())).collect(Collectors.toList());
-    }
+//    public List<SuperHero> sort(List<SuperHero> superHeroes) {
+//        return superHeroes.stream().sorted((o1, o2) -> o1.getName().compareTo(o2.getName())).collect(Collectors.toList());
+//    }
 }
 
-class SuperHeroComparator implements Comparator<SuperHero> {
-
-    @Override
-    public int compare(SuperHero o1, SuperHero o2) {
-        return o1.getName().compareTo(o2.getName());
-    }
-}
+//class SuperHeroComparator implements Comparator<SuperHero> {
+//
+//    @Override
+//    public int compare(SuperHero o1, SuperHero o2) {
+//        return o1.getName().compareTo(o2.getName());
+//    }
+//}
