@@ -1,7 +1,9 @@
 package immutability;
 
+import common.superheros.RecordKeeper;
 import common.superheros.SuperHero;
-import org.junit.Ignore;
+import org.assertj.core.internal.bytebuddy.implementation.bind.annotation.Super;
+import org.assertj.core.util.Lists;
 import org.junit.Test;
 import static org.assertj.core.api.Assertions.*;
 
@@ -86,6 +88,32 @@ public class SuperHeroSpec {
      */
     // New object of Super hero with the increased power level
 
+    @Test
+    public void afterFightWithOpponentForWinsStrengthIncreasesBy2() {
+        SuperHero hulk = new SuperHero("Hulk", 210);
+        SuperHero thor = new SuperHero("Thor", 200);
+
+        assertThat(hulk.fightAgainst(thor).getValue0())
+                    .isEqualTo(new SuperHero("Hulk", 212));
+        assertThat(hulk.fightAgainst(thor).getValue1())
+                    .isEqualTo(new SuperHero("Thor", 200));
+    }
+
+    @Test
+    public void afterFightWithOpponentForDrawStrengthIncreasesBy1() {
+        SuperHero hulk = new SuperHero("Hulk", 200);
+        SuperHero thor = new SuperHero("Thor", 200);
+
+
+        assertThat(hulk.fightAgainst(thor).getValue0())
+                    .isEqualTo(new SuperHero("Hulk", 201));
+        assertThat(hulk.fightAgainst(thor).getValue1())
+                    .isEqualTo(new SuperHero("Thor", 201));
+    }
+
+
+
+
     /*
         Get the fight history of the hero which displays
         1. With whom the fight was
@@ -93,5 +121,22 @@ public class SuperHeroSpec {
         3. What was the change in Strength level ( like increased from 2 to 4
      */
     // Store of all the history of the super hero which is nothing but the result from each fight
+
+    @Test
+    public void ableToPrintSuperHeroFightHistory() {
+        RecordKeeper recordKeeper = new RecordKeeper();
+        new SuperHero("Hulk", 200)
+                .fightAgainst(new SuperHero("Thor", 200) , recordKeeper).getValue0()
+                .fightAgainst(new SuperHero("Iron Man", 202), recordKeeper).getValue0()
+                .fightAgainst(new SuperHero("Black Widow", 100), recordKeeper);
+
+        assertThat(recordKeeper.historyOf("Hulk")).hasSize(3);
+        assertThat(recordKeeper.historyOf("Hulk"))
+                    .hasToString(Lists.newArrayList("Hulk vs Thor, Draw : 200 -> 201",
+                                                    "Hulk vs Iron Man, Lost : 201 -> 201",
+                                                    "Hulk vs Black Widow, Won : 201 -> 203").toString());
+
+    }
+
 
 }
